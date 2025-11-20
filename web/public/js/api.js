@@ -1,4 +1,4 @@
-export const API_BASE = 'http://localhost:8000';
+export const API_BASE = 'https://ksbchatbot.onrender.com';
 
 export async function apiFetch(path, options = {}) {
   const token = localStorage.getItem('ksm_access_token');
@@ -23,3 +23,4 @@ export async function apiFetch(path, options = {}) {
 
   return contentType.includes('application/json') ? res.json() : res.text();
 }
+
