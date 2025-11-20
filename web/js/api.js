@@ -1,4 +1,7 @@
-export const API_BASE = 'http://localhost:8000';
+// api.js
+
+// Use your Render backend URL
+export const API_BASE = 'https://ksbchatbot.onrender.com';
 
 export async function apiFetch(path, options = {}) {
   const token = localStorage.getItem('ksm_access_token');
