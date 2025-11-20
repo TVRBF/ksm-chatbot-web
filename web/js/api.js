@@ -26,3 +26,4 @@ export async function apiFetch(path, options = {}) {
 
   return contentType.includes('application/json') ? res.json() : res.text();
 }
+
